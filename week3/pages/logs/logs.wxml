@@ -1,0 +1,23 @@
+<view class="title">
+  {{info.title}}
+</view>
+<view class="box">
+  <view class="box-img"><image src="{{info.img}}"></image></view>
+  <view class="box-text">{{info.content}}</view>
+</view>
+<button type="primary" open-type="share">转发</button>
+<view class="pl">
+  <view class="pl-1">{{info.count}}条评论</view> 
+  <block wx:for="{{info.pl}}" wx:key="pls">
+    <view class="pl-2"> <text>{{index+1}}楼:</text>{{item.name}}</view>
+    <view class="pl-2">{{item.text}}  <text>{{item.time}}</text> </view>
+  </block>
+  <view class="a" bindtap="writepl">写评论</view>
+</view>
+<view hidden="{{is_show}}" class="plwrite">
+  <form bindsubmit="plForm">
+    <textarea name="text" id="" cols="30" rows="10"></textarea>
+    <button class="btn1" bindtap="resout">取消</button>
+    <button class="btn2" type="primary" form-type="submit">评论</button>
+  </form>
+</view>

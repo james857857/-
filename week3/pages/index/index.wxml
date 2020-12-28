@@ -1,0 +1,21 @@
+<view class="seach">
+  <view class="seach-box">
+    <image src="/img/seach.png"></image> 搜索
+  </view>
+</view>
+<block wx:for="{{hot}}" wx:key="hots">
+  <view class="hot">
+  <view>{{item}}</view>
+  <view>查看更多＞</view>
+</view>
+<view class="box" scroll-x="ture" enable-flex="ture" scroll-with-animation="ture">
+  <view class="box-1" wx:for="{{movie}}" wx:key="movies" bindtap="editTo" data-id="{{item.id}}">
+    <view class="box-img"><image src="{{item.img}}"></image></view>
+    <view class="title">{{item.title}}</view>
+    <view>
+      <text class="t1">★★★★★</text>
+      <text class="t2">{{item.pin}}</text>
+    </view>
+  </view>
+</view>
+</block>

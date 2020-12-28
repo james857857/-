@@ -1,0 +1,56 @@
+.title{
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+  text-align: center;
+ 
+}
+.box{
+  width: 750rpx;
+  display: flex;
+  flex-flow: column;
+}
+.box-img image{
+  width: 250rpx;
+  height: 400rpx;
+}
+.box-text{
+  width: 500rpx;
+  margin-left: 15rpx;
+}
+.pl{
+  width: 750rpx;
+  border-top: solid #cccccc 2rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+.pl-1{
+  font-weight: bold;
+  margin: 30rpx 0 10rpx 30rpx; 
+}
+.pl-2{
+  margin: 20rpx 0 10rpx 30rpx; 
+}
+.pl-2 text{margin-right: 30rpx;color: #909090;font-size: 28rpx;}
+.a{
+  position:absolute;
+  padding: 15rpx 25rpx;
+  right: 30rpx;
+  top: 20rpx;
+  background: #42bd55;
+  color: white;
+}
+.plwrite{
+  width: 750rpx;
+  position: fixed;
+  top: 0;
+  background: white;
+  border: 1rpx solid #cccccc;
+}
+.btn1{
+  float: left;
+}
+.btn2{
+  float: right;
+}
